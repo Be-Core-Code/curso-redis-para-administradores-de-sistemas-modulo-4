@@ -6,6 +6,7 @@
 
 ### Opciones de configuración
 
-* `slaveof`: configura una instancia de redis como esclavo del maestro especificado
+* `slaveof` / `replicaof`: configura una instancia de redis como esclavo del maestro especificado
+
 
 [Sobre `redis.conf`](https://redis.io/topics/config)

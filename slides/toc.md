@@ -3,6 +3,7 @@
 #### Replicación
 
 * [Configuración](/#configuration)
+* [Sincronización](/#syncronization)
 * Optimización
 * Resolución de problemas
 * Ejercicio

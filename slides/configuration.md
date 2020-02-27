@@ -149,7 +149,7 @@ redis-cli (replica1) > HGETALL curso:2
   
 ```bash
 # /etc/resolv.conf 
-slaveof 192.168.157.144 6789 
+replicaof 192.168.157.144 6789 
 ```   
 
 ^^^^^^
@@ -161,5 +161,7 @@ slaveof 192.168.157.144 6789
 ^^^^^^
 
 
-### Documentación
+### Documentación sobre replicación
+
 [https://redis.io/topics/replication](https://redis.io/topics/replication)
+[http://antirez.com/news/58](http://antirez.com/news/58)

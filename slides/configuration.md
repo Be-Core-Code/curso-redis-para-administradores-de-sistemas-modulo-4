@@ -1,6 +1,6 @@
 ### Configuración
 
-Redis dispone de varias opciones de configuración para controlar el comportamiento del nodo esclavo.
+Redis dispone de varias opciones de configuración para controlar el comportamiento del nodo réplica.
 
 La única realmente necesaria para configurarlo es `replicaof` o usando el comando 
 [`REPLICAOF`](https://redis.io/commands/replicaof).
@@ -9,7 +9,7 @@ La única realmente necesaria para configurarlo es `replicaof` o usando el coman
 
 #### 💻️Configuración
 
-Vamos a empezar levantando un maestro y un esclavo.
+Vamos a empezar levantando un maestro y una réplica.
 
 ![master_slave_configuration](/slides/images/master_slaves/master_slaves.001.jpeg)<!-- .element: style="height: 40vh" -->
 
@@ -27,11 +27,11 @@ Para cambiarle de nombre debes seguir los siguientes pasos:
 
 * Duplicar la máquina virtual
 * Levantar la máquina virtual y acceder a ella
-* Editar el fichero `/etc/hostname` y cambiar el nombre a `esclavo1`
+* Editar el fichero `/etc/hostname` y cambiar el nombre a `replica1`
 * Editar el fichero `/etc/hosts` y cambiarla para que contenga:
 
 ```bash
-127.0.0.1	esclavo1.localdomain esclavo1 localhost.localdomain localhost
+127.0.0.1	replica1.localdomain replica1 localhost.localdomain localhost
 ::1		localhost localhost.localdomain
 ```
 * Reiniciar la máquina 
@@ -40,10 +40,10 @@ Para cambiarle de nombre debes seguir los siguientes pasos:
 
 #### 💻️ Configuración
 
-* Accedemos al esclavo y ejecutamos el siguiente comando:
+* Accedemos a la réplica y ejecutamos el siguiente comando:
 
 ```redis-cli
-redis-cli (esclavo1) > REPLICAOF 192.168.157.144 6379
+redis-cli (replica1) > REPLICAOF 192.168.157.144 6379
 OK
 ```
 
@@ -73,10 +73,10 @@ repl_backlog_histlen:266
 
 #### 💻️ Configuración
 
-* Accedemos al esclavo y vemos la configuración:
+* Accedemos a la réplica y vemos la configuración:
 
 ```redis-cli
-redis-cli (esclavo) > INFO Replication
+redis-cli (replica) > INFO Replication
 # Replication
 role:slave                                                       <----------
 master_host:192.168.157.144                                      <----------
@@ -127,13 +127,13 @@ redis-cli (maestro) > HSET curso:2 nombre: "curso de git avanzado" duracion 30
 
 #### 💻️ Configuración
 
-* Si ahora vamos al esclavo y listamos las claves:
+* Si ahora vamos a la réplica y listamos las claves:
 
 ```redis-cli
-redis-cli (esclavo1) > KEYS *
+redis-cli (replica1) > KEYS *
 1) "curso:2"
 2) "curso:1"
-redis-cli (esclavo1) > HGETALL curso:2
+redis-cli (replica1) > HGETALL curso:2
 1) "nombre:"
 2) "curso de git avanzado"
 3) "duracion"
@@ -144,7 +144,7 @@ redis-cli (esclavo1) > HGETALL curso:2
 
 #### 💻️ Configuración
 
-* Para persistir los cambios en la configuración del esclavo, editamos el fichero
+* Para persistir los cambios en la configuración de la réplica, editamos el fichero
   `/etc/redis.conf` y añadimos la línea:
   
 ```bash

@@ -1,11 +1,14 @@
-#### Contenido módulo [MODULO]
+#### Contenido módulo 4
 
-#### [TÍTULO DEL MÓDULO]
+#### Replicación
 
-* ...
+* Configuración
+* Optimización
+* Resolución de problemas
+* Ejercicio
 
 notes:
 
 Los objetivos de este módulo son:
 
-* ...
+* Configurar una arquitectura de redis con un nodo maestro y dos réplicas.

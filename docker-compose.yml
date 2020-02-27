@@ -12,8 +12,8 @@ services:
       - ./slides:/home/node/slides
       - node_modules_cache:/home/node/node_modules
     ports:
-      - "[PUERTO]:[PUERTO]"
-    command: ["npm", "start", "--", "--port=[PUERTO]"]
+      - "8004:8004"
+    command: ["npm", "start", "--", "--port=8004"]
 
 volumes:
   node_modules_cache:

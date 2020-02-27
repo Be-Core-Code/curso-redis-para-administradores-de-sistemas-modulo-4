@@ -2,7 +2,7 @@
 
 #### Replicación
 
-* Configuración
+* [Configuración](/#configuration)
 * Optimización
 * Resolución de problemas
 * Ejercicio

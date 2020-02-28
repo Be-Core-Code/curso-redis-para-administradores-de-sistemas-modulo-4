@@ -5,8 +5,9 @@
 * [Configuración](/#configuration)
 * [Sincronización](/#syncronization)
 * [Optimización](/#optimization)
-* Resolución de problemas
-* Ejercicios
+* [Resolución de problemas:caso 1](/#troubleshooting1)
+* [Resolución de problemas:caso 2](/#troubleshooting2)
+* [Ejercicios](/#exercises)
 
 notes:
 

@@ -1,7 +1,9 @@
 ### Comandos utilizados en este módulo
 
-* [`SLAVEOF`](https://redis.io/commands/slaveof) 
+* [`INFO`](https://redis.io/commands/info)
 * [`REPLICAOF`](https://redis.io/commands/replicaof): disponible a partir de la versión 5
+* [`SLAVEOF`](https://redis.io/commands/slaveof) 
+
 ^^^^^^
 
 ### Opciones de configuración

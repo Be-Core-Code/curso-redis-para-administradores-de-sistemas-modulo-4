@@ -2,6 +2,13 @@
 
 ## Índice
 
+* Configuración
+* Sincronización
+* Optimización
+* Resolución de problemas:caso 1
+* Resolución de problemas:caso 2
+* Ejercicios
+* Comandos y opciones de configuración
 
 ## Visualización
 

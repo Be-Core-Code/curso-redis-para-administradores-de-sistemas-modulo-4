@@ -4,9 +4,9 @@
 
 * [Configuración](/#configuration)
 * [Sincronización](/#syncronization)
-* Optimización
+* [Optimización](/#optimization)
 * Resolución de problemas
-* Ejercicio
+* Ejercicios
 
 notes:
 

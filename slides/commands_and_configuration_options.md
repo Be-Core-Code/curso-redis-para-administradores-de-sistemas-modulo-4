@@ -7,6 +7,6 @@
 ### Opciones de configuración
 
 * `slaveof` / `replicaof`: configura una instancia de redis como esclavo del maestro especificado
-
+* `repl-backlog-size`: tamaño del backlog de replicación, por defecto 1 Mb
 
 [Sobre `redis.conf`](https://redis.io/topics/config)

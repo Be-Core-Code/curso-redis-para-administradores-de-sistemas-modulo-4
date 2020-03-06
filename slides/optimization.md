@@ -111,15 +111,6 @@ errors: 0, replies: 1000
 
 **Como esperábamos, se ha producido un `partial resync`**
 
-^^^^^^
-
-#### 💻️ Optimización de la replicación
-
-* Desactivamos de nuevo la red en la réplica
-
-```bash 
-(replica1) > rc-service networking stop
-```
 
 ^^^^^^
 

@@ -10,5 +10,7 @@
 
 * `slaveof` / `replicaof`: configura una instancia de redis como esclavo del maestro especificado
 * `repl-backlog-size`: tamaño del backlog de replicación, por defecto 1 Mb
+* `repl-timeout`
+* `repl-ping-replica-period`: tiempo entre pings del maestro a las réplicas
 
 [Sobre `redis.conf`](https://redis.io/topics/config)

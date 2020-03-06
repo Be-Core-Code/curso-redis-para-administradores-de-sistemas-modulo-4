@@ -17,7 +17,7 @@ Vamos a empezar levantando un maestro y una réplica.
 
 #### 💻️ Configuración
 
-* Lo primero que necesitamos hacer es levantar dos máquinas virtuales
+* Lo primero que necesitamos hacer es levantar dos máquinas virtuales que se vean entre sí.
 
 notes:
 
@@ -35,6 +35,21 @@ Para cambiarle de nombre debes seguir los siguientes pasos:
 ::1		localhost localhost.localdomain
 ```
 * Reiniciar la máquina 
+
+^^^^^^
+
+#### 💻️ Configuración
+
+* Lo siguiente que haremos será configurar redis para que escuche en la dirección IP de la máquina
+  editando el fichero `/etc/redis.conf`
+  
+```bash
+bind 127.0.0.1 192.168.157.XXX
+```
+
+notes:
+
+Editamos el fichero en el maestro y en la réplica y añadimos en cada caso lo que corresponda.
 
 ^^^^^^
 

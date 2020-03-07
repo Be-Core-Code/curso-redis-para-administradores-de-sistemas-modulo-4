@@ -2,6 +2,8 @@
 
 Añade una segunda réplica al cluster
 
+^^^^^^
+
 ### Ejercicio 2: 
 
 Utilizando el parámetro de configuración `requirepass`, configura el cluster para que las réplicas se conecten al maestro

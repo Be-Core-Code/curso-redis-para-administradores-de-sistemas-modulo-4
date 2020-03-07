@@ -98,19 +98,19 @@ Mirando el log de la réplica vemos lo siguiente:
 
 #### Resolución de problemas: Caso 1
 
-![master_slave_ping.001](/slides/images/master_slave_ping/master_slave_ping.001.jpeg)      
+![master_slave_ping.001](/slides/images/master_slave_ping/master_slave_ping.001.jpeg)<!-- .element: style="height: 50vh" -->      
   
 ^^^^^^
 
 #### Resolución de problemas: Caso 1
 
-![master_slave_ping.002](/slides/images/master_slave_ping/master_slave_ping.002.jpeg)
+![master_slave_ping.002](/slides/images/master_slave_ping/master_slave_ping.002.jpeg)<!-- .element: style="height: 50vh" -->
 
 ^^^^^^
 
 #### Resolución de problemas: Caso 1
 
-![master_slave_ping.003](/slides/images/master_slave_ping/master_slave_ping.003.jpeg)
+![master_slave_ping.003](/slides/images/master_slave_ping/master_slave_ping.003.jpeg)<!-- .element: style="height: 50vh" -->
 
 ^^^^^^
 

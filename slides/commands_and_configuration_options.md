@@ -12,5 +12,6 @@
 * `repl-backlog-size`: tamaño del backlog de replicación, por defecto 1 Mb
 * `repl-timeout`
 * `repl-ping-replica-period`: tiempo entre pings del maestro a las réplicas
+* `client-output-buffer-limit`: tamaño del buffer de replicación
 
 [Sobre `redis.conf`](https://redis.io/topics/config)
